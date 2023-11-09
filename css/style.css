@@ -59,6 +59,7 @@ h1{
 
 .navLinks.active {
   display: flex; 
+  background-color: #ffdede;
 }
 
 .header{
@@ -212,3 +213,17 @@ h1{
 .prevB:hover, .nextB:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
+.footer {
+  bottom: 0; 
+  left: 0; 
+  z-index: 10;
+  width: 100%;
+  background-color: #f2cc84;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 481px)
+
+@media screen and (min-width: 1024px)
