@@ -6,6 +6,9 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-p {
+p, a {
   font-family: 'Barlow', 'Arial', sans-serif; 
 }
+
+h1, h2 {
+  font-family: 'Parisienne', 'Times New Roman', cursive;
