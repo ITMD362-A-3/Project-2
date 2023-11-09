@@ -36,3 +36,33 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+//birthday slideshow
+let birthdaySlideIndex = 1;
+showBirthdaySlides(birthdaySlideIndex);
+
+// Next/previous controls for birthdays
+function plusBirthdaySlides(n) {
+  showBirthdaySlides(birthdaySlideIndex += n);
+}
+
+// Thumbnail image controls for birthdays
+function currentBirthdaySlide(n) {
+  showBirthdaySlides(birthdaySlideIndex = n);
+}
+
+function showBirthdaySlides(n) {
+  let i;
+  let birthdaySlides = document.getElementsByClassName("birthdaySlides");
+  let birthdayDots = document.getElementsByClassName("birthdayDot");
+  if (n > birthdaySlides.length) { birthdaySlideIndex = 1; }
+  if (n < 1) { birthdaySlideIndex = birthdaySlides.length; }
+  for (i = 0; i < birthdaySlides.length; i++) {
+    birthdaySlides[i].style.display = "none";
+  }
+  for (i = 0; i < birthdayDots.length; i++) {
+    birthdayDots[i].className = birthdayDots[i].className.replace(" active", "");
+  }
+  birthdaySlides[birthdaySlideIndex - 1].style.display = "block";
+  birthdayDots[birthdaySlideIndex - 1].className += " active";
+}
