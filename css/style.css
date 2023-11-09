@@ -240,8 +240,8 @@ h1{
   }
 
   .topnav a {
-    float: left;
-    color: white;;
+    float: center;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -256,5 +256,17 @@ h1{
   .topnav a.active {
     background-color: #f2cc84;
     color: white;
+  }
+  .navLinks{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #ffdede;
+  position: absolute;
+  width: 100%;
+  }
+
+  .menubar {
+  display: none;
   }
 }
