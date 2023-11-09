@@ -1,56 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Parisienne&display=swap');
+html {
+  font-size: 1.375em; /* 22px */
+  line-height: 1.182em; /* 26px / ~ 120% */
+  padding: 1.182em; /* 26px / ~ 120% */
+  text-rendering: optimizeLegibility;
+}
+
+p, a {
+  font-family: 'Barlow', 'Arial', sans-serif; 
+}
+
+h1, h2 {
+  font-family: 'Parisienne', 'Times New Roman', cursive;
+}
+h1{
+  font-size: 1.5em;
+}
+
 .topnav {
-    background-color: #ffdede;
-    display: flex;
-    position: relative;
-    align-items: center;
-    overflow: visible;
+  background-color: #ffdede;
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: visible;
+}
+
+.navLinks{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffdede;
+  position: absolute;
+  width: 100%;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
+}
+.menubar {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 2;
+  padding: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  align-self: flex-end;
+}
+
+.navLinks.active {
+  display: flex; 
+  background-color: #ffdede;
+  z-index: 1;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+}
+
+.occasions {
+  text-align: center;
+  padding: 5px;
+}
+
+.occasions p {
+  font-size: .9em;
+}
+
+.greenblue {
+  background-color: #95ccba;
+}
+
+/* wedding picture slideshow */
+* {box-sizing:border-box}
+
+.wedding-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  background-color: black;
+  color: #ffdede;
+  font-family: 'Barlow', 'Arial', sans-serif;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  text-align:center;
+ 
+}
+
+.dot, .birthdayDot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.wedding-slideshow img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.birthdays {
+  text-align: center;
+}
+
+.birthday-slideshow img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.prevB, .nextB {
+  cursor: pointer;
+  position: absolute;
+  bottom: -45%;
+  width: auto;
+  margin:-10px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.nextB {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevB:hover, .nextB:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.footer {
+  bottom: 0; 
+  left: 0; 
+  z-index: 10;
+  width: 100%;
+  background-color: #f2cc84;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 481px) {
+  h1, h2 {
+    padding:5px;
   }
-  
+  h2 {
+    background-color: #f2cc84;
+  }
+  .prevB, .nextB {
+     bottom: -5%;
+  }
+
+@media screen and (min-width: 1024px) {
+  .topnav {
+    background-color: #ffdede;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #95ccba;
+    color: white;
+  }
+
+  .topnav a.active {
+    background-color: #f2cc84;
+    color: white;
+  }
   .navLinks{
-    display: none;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     text-align: center;
     background-color: #ffdede;
     position: absolute;
     width: 100%;
   }
-  
-  .topnav a {
-    color: black;
-    padding: 14px 16px;
-    font-size: 17px;
-    display: block;
-  }
+
   .menubar {
+    display: none;
+  }
+
+  #weddingcontent {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .weddings {
+    flex: 2;
+  }
+
+  .wedding-slideshow{
+    flex: 3;
+  }
+
+  #bdaycontent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .birthdays {
+    flex: 2;
+    text-align: left;
+  }
+
+  .birthday-slideshow{
+    flex: 3;
+  }
+  .prevB, .nextB {
     cursor: pointer;
-    margin-left: auto;
-    z-index: 2;
-    padding: 5px;
+    position: absolute;
+    bottom: -25%;
+    width: auto;
+    margin:-1px;
+    padding:16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
-    align-self: flex-end;
-  }
-  
-  .navLinks.active {
-    display: flex; 
-    background-color: #ffdede;
-    z-index: 1;
-  }
-  
-  .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-  }
-  
-  .header img {
-    width: 40px;
-    height: 40px;
-  }
+}
