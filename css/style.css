@@ -45,7 +45,7 @@ h1{
   flex-direction: column;
   cursor: pointer;
   margin-left: auto;
-  z-index: 1;
+  z-index: 2;
   padding: 5px;
 }
 
@@ -60,6 +60,7 @@ h1{
 .navLinks.active {
   display: flex; 
   background-color: #ffdede;
+  z-index: 1;
 }
 
 .header{
@@ -224,6 +225,12 @@ h1{
   text-align: center;
 }
 
-@media screen and (min-width: 481px)
+@media screen and (min-width: 481px) {
+  h1, h2 {
+    padding:5px;
+  }
+  h2 {
+    background-color: #f2cc84;
+}
 
 @media screen and (min-width: 1024px)
