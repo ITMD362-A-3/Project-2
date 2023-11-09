@@ -40,61 +40,64 @@
       <h1>Occasions</h1>
       <p class="greenblue"> A celebration of life, love, and all of life's memorable events!</p>
       <p>Toronto Cupcake would love to help make your special occasion one to remember.</p>
-      <h2>Weddings & Engagements</h2>
-      <p>We have over 1500 different combinations with our standard offerings but if you want something special we would love to make it happen. We have many different 
-      sized and shaped cupcake stands available for your use or we can design and make one just for you.</p>
     </div>
-    <div class="wedding-slideshow">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 6</div>
-        <img src="images/wedding1.jpg" alt="Weddings">
-        <div class="text">We will work with you to create a personalized display tailored to match the size and style of your wedding. We can also create a unique multi-layered wedding cake to be
-           placed on the top tier. The flowers you see on top of this sample are made to order (in this case to match the bride's bouquet) in our shop.</div>
+    <div id="imgcontent">
+      <div class="weddings">
+        <h2>Weddings & Engagements</h2>
+        <p>We have over 1500 different combinations with our standard offerings but if you want something special we would love to make it happen. We have many different 
+        sized and shaped cupcake stands available for your use or we can design and make one just for you.</p>
       </div>
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 6</div>
-        <img src="images/wedding2.jpg" alt="Tiered Cupcake Stand square">
-        <div class="text">This is one of our square cupcake stands starring at a Black and White themed wedding. We also provided a 6 inch square wedding cake for the Bride and Groom to share on 
-          their first anniversary. Each of the cupcakes have a hand stamped caligraphied initial of the Bride and Groom.</div>
+      <div class="wedding-slideshow">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/wedding1.jpg" alt="Weddings">
+          <div class="text">We will work with you to create a personalized display tailored to match the size and style of your wedding. We can also create a unique multi-layered wedding cake to be
+             placed on the top tier. The flowers you see on top of this sample are made to order (in this case to match the bride's bouquet) in our shop.</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+            <img src="images/wedding2.jpg" alt="Tiered Cupcake Stand square">
+            <div class="text">This is one of our square cupcake stands starring at a Black and White themed wedding. We also provided a 6 inch square wedding cake for the Bride and Groom to share on 
+            their first anniversary. Each of the cupcakes have a hand stamped caligraphied initial of the Bride and Groom.</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/wedding3.jpg" alt="Wedding Favours">
+          <div class="text">Wedding Favours - Shown are Tuxedo and Gown cakepops, one of our most popular favour. They can be indiviually wrapped or get as creative as you would like.  We have 
+            done theme weddings and engagement parties with cakepops to match. Everything from Star Wars to Zombies!</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/wedding4.jpg" alt="Any Combination Flavour">
+          <div class="text">Any combination of flavours, frostings, and fillings. We will work with you to create a beautiful arragement of custom combination that will surely satisfy all your
+            guests.</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/wedding5.jpg" alt="Decorate to your theme">
+          <div class="text">Our cupcake stands can have ribbons, bows, colours, or other decorative items to compliment your theme.  We also make custom shapes and sizes for that very special
+             wow factor.</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/wedding6.jpg" alt="Decorate to your theme">
+          <div class="text">We will compliment your wedding or engagement theme by suggesting and adding elements into the dislay.  In this case we worked with a couple that were having a
+             traditional New Orleans wedding.</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 6</div>
-        <img src="images/wedding3.jpg" alt="Wedding Favours">
-        <div class="text">Wedding Favours - Shown are Tuxedo and Gown cakepops, one of our most popular favour. They can be indiviually wrapped or get as creative as you would like.  We have 
-          done theme weddings and engagement parties with cakepops to match. Everything from Star Wars to Zombies!</div>
+      <!-- The dots/circles -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
       </div>
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 6</div>
-        <img src="images/wedding4.jpg" alt="Any Combination Flavour">
-        <div class="text">Any combination of flavours, frostings, and fillings. We will work with you to create a beautiful arragement of custom combination that will surely satisfy all your
-          guests.</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 6</div>
-        <img src="images/wedding5.jpg" alt="Decorate to your theme">
-        <div class="text">Our cupcake stands can have ribbons, bows, colours, or other decorative items to compliment your theme.  We also make custom shapes and sizes for that very special
-           wow factor.</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">6 / 6</div>
-        <img src="images/wedding6.jpg" alt="Decorate to your theme">
-        <div class="text">We will compliment your wedding or engagement theme by suggesting and adding elements into the dislay.  In this case we worked with a couple that were having a
-           traditional New Orleans wedding.</div>
-      </div>
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <!-- The dots/circles -->
-    <div class="dots">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-    </div>
-    <div class="birthdays">
+      <div class="birthdays">
       <h2>Birthdays and Anniversaries</h2>
       <p>Themed birthdays or anniversaries are all the rage. From Cookie Monster to The Bachelorette we have done them all.</p>
       <div class="birthday-slideshow">
@@ -137,13 +140,14 @@
         <span class="birthdayDot" onclick="currentBirthdaySlide(6)"></span>
       </div>
       <p>We will work with you to create a personalized display tailored to match the size and style of your party. We can also create a unique multi-layered birthday/anniversary cake
-     to be placed on the top tier.  </p>
-    </div>
-    <div class="footer">
-      <p>
-        <a href="EmploymentOpportunities.html">Employment</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </p>
+       to be placed on the top tier.  </p>
+      </div>
+      <div class="footer">
+        <p>
+          <a href="EmploymentOpportunities.html">Employment</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </p>
+      </div>
     </div>
   </div>
 </body>

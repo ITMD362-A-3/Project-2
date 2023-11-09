@@ -269,4 +269,17 @@ h1{
   .menubar {
   display: none;
   }
+
+  #imgcontent {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .weddings {
+    flex: 2;
+  }
+
+  .wedding-slideshow{
+    flex: 3;
+  }
 }
