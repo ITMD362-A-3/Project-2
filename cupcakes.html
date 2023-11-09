@@ -81,19 +81,18 @@ s0.parentNode.insertBefore(s1,s0);
 </header>
 
 <br/>
-<div class="w3-container w3-small w3-text-pink w3-hide-large">
-<p>Skip to:
-<a href="cupcakes.html#Holidays">HOLIDAYS</a></br>
-<a href="cupcakes.html#Special-Events">Special Events and Festivals</a></br>
-<a href="cupcakes.html#Custom">CUSTOM</a></p>
-</div> 
+<div class="dropdown" style="float: right;">
+  <button class="dropbtn">Jump To </button>
+  <div class="dropdown-content">
+    <a href="cupcakes.html#Holidays">HOLIDAYS</a></br>
+    <a href="cupcakes.html#Special-Events">Special Events and Festivals</a>
+    <a href="cupcakes.html#Custom">CUSTOM</a>
+  </div>
+</div>
 
 <h1 class="w3-text-pink w3-center"> Cupcakes </h1>
 <h2 id="Always-Available" class="w3-text-pink w3-center">Always Available </h2>
 
-</div>
-</div>
-</div>
 <a id="Chocolate-Peanut-Butter-ret"></a>
 <div class="w3-row">
     <div class="w3-col w3-center w3-container m6 l2">
@@ -774,25 +773,30 @@ s0.parentNode.insertBefore(s1,s0);
   <h4 class="w3-text-pink w3-center ">Winter Holiday Specials</h4>
 
   <hr>
-  <p class="w3-justify">Happy Holidays!!  Toronto Cupcake is bringing joy and good cheer with our special Christmas dozen cupcakes.  Gingerbread people, Candy Canes, Christmas Trees, Ornaments all on delicious cupcakes.</p>
-  <p>Beautifully boxed and decorated these cupcakes come with an enevelope, card, and your personal message.</p>
-  <p>Please be aware that we get very busy during this time of year so ordering early for Christmas delivery is advisable.</p>
-  <p>We wish you all a safe, happy, joyous holiday season.</p>
-  <h4 class="w3-container w3-center w3-text-theme">Christmas Dozen</h4>
-  <div class="w3-col w3-center w3-container m12 12">
-    <img src="images/cupcakes_flavours/christmasdoz.webp" title="Christmas Dozen" alt="Toronto Cupcakes Christmas Dozen" class="w3-center w3-margin-right" width="300" height="300">
+  <p class="w3-justify">Happy Holidays!!  We wish you all a safe, happy, joyous holiday season. Our beautifully boxed and decorated cupcakes come with an enevelope, card, and your personal message.</p>
+  <div class="w3-col w3-container m6 12">
+  <hr>
+    <img src="images/cupcakes_flavours/christmasdoz.webp" title="Christmas Dozen" alt="Toronto Cupcakes Christmas Dozen" class="w3-center  w3-round-large w3-hover-shadow" width="175" height="175" style="cursor:pointer"  onclick="document.getElementById('Christmas').style.display='flex'"><br/><p>Christmas Dozen</p>
         <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
         <input type="hidden" name="group" value="Speciality Items - Winter Holiday Doz">
         <input type="hidden" name="name" value="Christmas Dozen">
         <input type="hidden" name="price" value="50">
-        <input type="hidden" name="shipping" value="">
+        <input type="hidden" name="shipping" value="0">
         <input type="hidden" name="page" value="cupcakes.html">
         <input type="hidden" name="control" value="a4c72360b6eda188d24a10249685a506">
-            <span class="w3-small">$50.00 per dozen</span><br/>
-            <span class="w3-small">QTY (doz)</span>
-            <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+        <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
         </form>
   </div> 
+  <div id="Christmas" class="w3-modal w3-transparent" onclick="this.style.display='none'">
+    <div class="w3-modal-content w3-quarter w3-round-large">
+        <div class="w3-card-4" >
+            <div class="w3-container w3-padding-16">
+            <h4 class="w3-container w3-center w3-text-theme">Christmas Dozen</h4><span class="w3-small">$50.00 per dozen</span><br/></div>
+            <br/>
+            <br/>
+            <img src="images/cupcakes_flavours/toronto_12_valentines.webp" title="Valentine's Day" alt="Toronto Cupcakes Valentine's Day cupcake" class="w3-center" width="250" height="250">
+            <p> Toronto Cupcake is bringing joy and good cheer with our special Christmas dozen cupcakes.  Gingerbread people, Candy Canes, Christmas Trees, Ornaments all on delicious cupcakes. Please be aware that we get very busy during this time of year so ordering early for Christmas delivery is advisable.</p>
+</div></div></div></div>
   <div class="w3-col w3-container m6 l2">
     <img src="images/cupcakes_flavours/toronto_12_valentines.webp" title="Valentines Day" alt="Toronto Cupcakes Valentines Day Dozen cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="175" height="175" style="cursor:pointer"  onclick="document.getElementById('Valentines-Day').style.display='flex'"><br/><p>Valentine's Day</p>
     <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
@@ -813,8 +817,7 @@ s0.parentNode.insertBefore(s1,s0);
                 <br/>
                 <br/>
                 <img src="images/cupcakes_flavours/toronto_12_valentines.webp" title="Valentine's Day" alt="Toronto Cupcakes Valentine's Day cupcake" class="w3-center" width="250" height="250">
-                <p>
-        We have designed and packaged a delicious selection of a dozen Valentine's Day Cupcakes including one topped with a heart shaped chocolate truffle. </br></br>Beautifully boxed and decorated these cupcakes come with an enevelope, card, and your personal message.</p></p>
+                <p> We have designed and packaged a delicious selection of a dozen Valentine's Day Cupcakes including one topped with a heart shaped chocolate truffle.</p>
     </div></div></div></div>
 
     <div class="w3-col w3-container m6 l2">
@@ -878,7 +881,7 @@ s0.parentNode.insertBefore(s1,s0);
     <input type="hidden" name="shipping" value="0">
     <input type="hidden" name="page" value="cupcakes.html">
     <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-    <p>Oh Canada!</br>Canada Day</br>cupcake</p>
+    <p>Canada Day</br>cupcake</p>
     <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     </form>
     </div>
@@ -1042,7 +1045,7 @@ s0.parentNode.insertBefore(s1,s0);
     <input type="hidden" name="shipping" value="0">
     <input type="hidden" name="page" value="cupcakes.html">
     <input type="hidden" name="control" value="8659c718715d7b25ec138e092fd804e5">
-<p>Just for Kids cupcake</p>
+<p>Kids cupcake</p>
 <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     </form>
     </div>
@@ -1069,7 +1072,7 @@ s0.parentNode.insertBefore(s1,s0);
     <input type="hidden" name="shipping" value="0">
     <input type="hidden" name="page" value="cupcakes.html">
     <input type="hidden" name="control" value="8659c718715d7b25ec138e092fd804e5">
-    <p>Happy Birthday cupcake</p>
+    <p>Birthday cupcake</p>
     <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     </form>
     </div>
