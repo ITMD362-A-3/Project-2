@@ -17,14 +17,18 @@ h1, h2 {
 .topnav {
   background-color: #95ccba;
   display: flex;
-  position: relative;
-  align-items: center;
-  padding: 10px 20px;
-  overflow: hidden;
+  position: right;
+  align-items: right;
 }
 
-.topnav, #navlinks{
+.navLinks{
   display: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: #333;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .topnav a {
@@ -34,7 +38,7 @@ h1, h2 {
   display: block;
 }
 .menubar {
-  display: none; 
+  display: flex;
   flex-direction: column;
   cursor: pointer;
 }
@@ -42,6 +46,11 @@ h1, h2 {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #ffdede;
-    margin: 3px 0;
+    background-color: black;
+    margin: 7px 0;
+}
+
+.navLinks.active {
+  display: flex; 
+  color: #ffdede;
 }
