@@ -258,21 +258,22 @@ h1{
     color: white;
   }
   .navLinks{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  background-color: #ffdede;
-  position: absolute;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #ffdede;
+    position: absolute;
+    width: 100%;
   }
 
   .menubar {
-  display: none;
+    display: none;
   }
 
-  #imgcontent {
-  display: flex;
-  flex-wrap: wrap;
+  #weddingcontent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
   }
 
   .weddings {
@@ -280,6 +281,19 @@ h1{
   }
 
   .wedding-slideshow{
+    flex: 3;
+  }
+
+  #bdaycontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .birthdays {
+    flex: 2;
+  }
+
+  .birthday-slideshow{
     flex: 3;
   }
 }
