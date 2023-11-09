@@ -589,6 +589,10 @@ input[type=checkbox].w3-check:disabled+.w3-validate {
     .w3-col.l12 {
         width: 99.99999%
     }
+    img{
+        width: 175px;
+        height: 175px;
+    }
 }
 
 .w3-content {
@@ -598,6 +602,10 @@ input[type=checkbox].w3-check:disabled+.w3-validate {
 
 .w3-hide {
     display: none!important
+}
+img{
+    width: 100px;
+    height: auto;
 }
 
 @media (max-width:600px) {
@@ -623,11 +631,16 @@ input[type=checkbox].w3-check:disabled+.w3-validate {
     .w3-modal-content {
         width: 900px
     }
+    
 }
 
 @media (max-width:600px) {
     .w3-hide-small {
         display: none!important
+    }
+    img{
+        width: 100;
+        height: auto;
     }
 }
 
