@@ -199,13 +199,9 @@ h1{
   }
 
 body {
-    background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background .jpg"); /* Update the path to your background image */
-    background-size: cover; /* Adjust to your preference */
+    background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background .jpg"); 
+    background-size: cover; 
     background-repeat: no-repeat;
-    font-size: 1.375em;
-    line-height: 1.182em;
-    padding: 1.182em;
-    text-rendering: optimizeLegibility;
   }
   
   
