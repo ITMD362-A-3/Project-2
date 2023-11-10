@@ -604,7 +604,9 @@ img{
     width: 100px;
     height: 125px;
 }
-
+#close-icon{
+    width: 50px;
+}
 @media (max-width:600px) {
     .w3-modal-content {
         margin: 0 10px;
