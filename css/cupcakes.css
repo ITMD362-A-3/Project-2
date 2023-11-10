@@ -2,16 +2,21 @@
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
-
+h2, button{
+    display: inline-block;
+}
+h2{
+    text-align: center;
+}
 body {
-    margin: 0
+    margin: 0;
 }
 
 details,
@@ -30,12 +35,12 @@ nav {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
 }
 
 a:active,
 a:hover {
-    outline: 0
+    outline: 0;
 }
 
 small {
@@ -388,12 +393,12 @@ th {
     width: 100%;
     color: #000;
     border: 1px solid transparent;
-    border-bottom: 1px solid #009688
+    border-bottom: 1px solid #009688;
 }
 
 .w3-select select:focus {
     color: #000;
-    border: 1px solid #009688
+    border: 1px solid #009688;
 }
 
 .w3-dropdown-click,
@@ -1327,13 +1332,21 @@ img{
 .w3-hover-border-theme:hover {
     border-color: #e91e63!important
 }
-
+.divider{
+    display: block;
+    border-top: solid 0.185em gray;
+    margin: 1.185em 0 ;
+}
+h2{
+    padding-top: 1.185em ;
+}
 .icon-up-arrow {
     content: url(https://www.torontocupcake.com/images/graphics/up-arrow.svg);
     height: 20px;
     width: 20px
 }
 .dropbtn {
+    margin-top: 1.185em ;
     background-color: #ffdede;
     color: white;
     padding: 16px;
@@ -1366,4 +1379,4 @@ img{
   
 .dropdown-content a:hover {background-color: #f1f1f1;}  
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #95ccba;}
