@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Parisienne&display=swap');
-
 html {
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
-  background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background.jpg");
+  background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background .jpg"); 
+
 }
 
 p, a {
-  font-family: 'Barlow', 'Arial', sans-serif;
+  font-family: 'Barlow', 'Arial', sans-serif; 
 }
 
 h1, h2 {
   font-family: 'Parisienne', 'Times New Roman', cursive;
 }
-
-h1 {
+h1{
   font-size: 2.5em;
 }
 
@@ -28,7 +27,7 @@ h1 {
   overflow: visible;
 }
 
-.navLinks {
+.navLinks{
   display: none;
   flex-direction: column;
   text-align: center;
@@ -43,7 +42,6 @@ h1 {
   font-size: 17px;
   display: block;
 }
-
 .menubar {
   display: flex;
   flex-direction: column;
@@ -62,12 +60,12 @@ h1 {
 }
 
 .navLinks.active {
-  display: flex;
+  display: flex; 
   background-color: #ffdede;
   z-index: 1;
 }
 
-.header {
+.header{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,17 +83,20 @@ h1 {
 }
 
 .occasions p {
-  font-size: 0.9em;
+  font-size: .9em;
 }
 
 .greenblue {
   background-color: #95ccba;
 }
 
+
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 
 .text {
   background-color: black;
@@ -118,27 +119,24 @@ h1 {
 }
 
 .dots {
-  text-align: center;
+  text-align:center;
+ 
 }
 
 @keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-.in-left {
-  auto;
+.in-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
+
 .footer {
-  bottom: 0;
-  left: 0;
+  bottom: 0; 
+  left: 0; 
   z-index: 10;
   width: 100%;
   background-color: #f2cc84;
@@ -148,15 +146,14 @@ h1 {
 
 @media screen and (min-width: 481px) {
   h1, h2 {
-    padding: 5px;
+    padding:5px;
   }
   h2 {
     background-color: #f2cc84;
   }
   .prevB, .nextB {
-    bottom: -5%;
+     bottom: -5%;
   }
-}
 
 @media screen and (min-width: 1024px) {
   .topnav {
@@ -182,8 +179,7 @@ h1 {
     background-color: #f2cc84;
     color: white;
   }
-
-  .navLinks {
+  .navLinks{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -197,20 +193,20 @@ h1 {
   }
 
   body {
-    background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background.jpg");
-    background-size: cover;
+    background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background .jpg"); 
+    background-size: cover; 
     background-repeat: no-repeat;
   }
 
   .main-content-area {
     display: flex;
   }
-
+  
   .content {
     flex: 1;
     padding: 20px;
   }
-
+  
   .large-image {
     flex: 1;
     max-width: 100%;
@@ -218,8 +214,8 @@ h1 {
     display: block;
     margin: 0 auto;
   }
-
   .wide-heading {
     text-align: center;
     margin: 0 auto;
   }
+  
