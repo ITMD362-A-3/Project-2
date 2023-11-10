@@ -1,5 +1,4 @@
 
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -23,7 +22,9 @@ menu,
 nav {
     display: block
 }
-
+#close{
+    width: 30px;
+}
 [hidden] {
     display: none
 }
@@ -588,10 +589,6 @@ input[type=checkbox].w3-check:disabled+.w3-validate {
     }
     .w3-col.l12 {
         width: 99.99999%
-    }
-    img{
-        width: 175px;
-        height: 175px;
     }
 }
 
