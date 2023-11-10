@@ -16,21 +16,53 @@ h2, button{
 body {
     margin: 0;
 }
-
+.navLinks.active {
+    display: flex; 
+    background-color: #ffdede;
+    z-index: 1;
+  }
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+  }
+  
+.header img {
+    width: 40px;
+    height: 40px;
+}
+.menubar {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 2;
+    padding: 5px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    align-self: flex-end;
+  }
 .divider{
     display: block;
     border-top: solid 0.185em gray;
     margin: 1.185em 0 ;
+    padding: 0.875em 0;
 }
 h2{
-    padding-top: 1.185em ;
+    margin-top: 1.185em ;
 }
 .dropbtn {
     margin-top: 1.185em ;
     background-color: #ffdede;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 0.875em;
     border: none;
     cursor: pointer;
   }
@@ -64,15 +96,14 @@ h2{
 h1{
   font-size: 2.5em;
 }
-h2,p{
+h2{
     font-size: 1.125em;
+}
+p{
+    font-size: 0.875em;
 }
 a {
     background-color: transparent;
-}
-a:active,
-a:hover {
-    outline: 0;
 }
 .footer {
     bottom: 0; 
@@ -83,64 +114,23 @@ a:hover {
     color: white;
     text-align: center;
   }  
-.topnav {
-    background-color: #ffdede;
-    display: flex;
-    position: relative;
-    align-items: center;
-    overflow: visible;
+img{
+    width: 100px;
+    height: 125px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    justify-content: space-evenly;
   }
-  
-  .navLinks{
-    display: none;
-    flex-direction: column;
+.grid-item {
+    border: none;
+    padding: 20px;
+    font-size: 30px;
     text-align: center;
-    background-color: #ffdede;
-    position: absolute;
-    width: 100%;
   }
-  
-  .topnav a {
-    color: black;
-    padding: 14px 16px;
-    font-size: 17px;
-    display: block;
-  }
-  .menubar {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: auto;
-    z-index: 2;
-    padding: 5px;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
-    align-self: flex-end;
-  }
-  
-  .navLinks.active {
-    display: flex; 
-    background-color: #ffdede;
-    z-index: 1;
-  }
-  
-  .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-  }
-  
-  .header img {
-    width: 40px;
-    height: 40px;
-  }
-  
+
 @media screen and (min-width: 481px) {
     h1, h2 {
       padding:5px;
@@ -150,6 +140,7 @@ a:hover {
     .topnav {
       background-color: #ffdede;
       overflow: hidden;
+      margin-bottom: 2em;
     }
   
     .topnav a {
@@ -185,16 +176,6 @@ a:hover {
   }
 
 
-
-
-small {
-    font-size: 80%
-}
-
-img {
-    border: 0
-}
-
 button,
 input,
 select {
@@ -223,49 +204,6 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0
-}
-
-h1 {
-    font-size: 1.5em;
-}
-
-h2 {
-    font-size: 1.275em;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 20px;
-}
-
-h5 {
-    font-size: 18px;
-}
-
-h6 {
-    font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 400;
-    margin: 10px 0;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-    font-weight: inherit;
 }
 
 img {
@@ -320,7 +258,6 @@ a {
     position: relative
 }
 
-#main,
 .w3-main {
     transition: margin-left .4s
 }
@@ -575,26 +512,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate {
 .w3-hide {
     display: none!important
 }
-img{
-    width: 100px;
-    height: 125px;
-}
-#close-icon{
-    width: 50px;
-    height: 50px;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-    justify-content: space-evenly;
-  }
-.grid-item {
-    border: none;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
+
 .w3-footer{
     text-align: center;
     width: 80%;
