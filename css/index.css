@@ -90,14 +90,6 @@ h1{
   background-color: #95ccba;
 }
 
-/* wedding picture slideshow */
-* {box-sizing:border-box}
-
-.wedding-slideshow {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
 
 .next {
@@ -205,5 +197,21 @@ h1{
     background-size: cover; 
     background-repeat: no-repeat;
   }
+
+  .main-content-area {
+    display: flex;
+  }
   
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .large-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
   

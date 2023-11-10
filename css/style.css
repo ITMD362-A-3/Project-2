@@ -4,6 +4,8 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
+  background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background .jpg"); 
+
 }
 
 p, a {
@@ -14,7 +16,7 @@ h1, h2 {
   font-family: 'Parisienne', 'Times New Roman', cursive;
 }
 h1{
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .topnav {
@@ -88,42 +90,13 @@ h1{
   background-color: #95ccba;
 }
 
-/* wedding picture slideshow */
-* {box-sizing:border-box}
 
-.wedding-slideshow {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
 .text {
   background-color: black;
@@ -150,70 +123,16 @@ h1{
  
 }
 
-.dot, .birthdayDot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 
-.wedding-slideshow img {
-  margin-left: auto;
+.in-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-.birthdays {
-  text-align: center;
-}
-
-.birthday-slideshow img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.prevB, .nextB {
-  cursor: pointer;
-  position: absolute;
-  bottom: -45%;
-  width: auto;
-  margin:-10px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.nextB {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prevB:hover, .nextB:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
 .footer {
   bottom: 0; 
@@ -273,46 +192,26 @@ h1{
     display: none;
   }
 
-  #weddingcontent {
+  body {
+    background-image: url("C:\Users\Althea\Documents\GitHub\Project2\images\background .jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .main-content-area {
     display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
   }
-
-  .weddings {
-    flex: 2;
+  
+  .content {
+    flex: 1;
+    padding: 20px;
   }
-
-  .wedding-slideshow{
-    flex: 3;
+  
+  .large-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
-
-  #bdaycontent {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-
-  .birthdays {
-    flex: 2;
-    text-align: left;
-  }
-
-  .birthday-slideshow{
-    flex: 3;
-  }
-  .prevB, .nextB {
-    cursor: pointer;
-    position: absolute;
-    bottom: -25%;
-    width: auto;
-    margin:-1px;
-    padding:16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-}
+  
