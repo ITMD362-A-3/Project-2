@@ -118,6 +118,10 @@ img{
     width: 100px;
     height: 125px;
     cursor: pointer;
+    margin-bottom: 0.875em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .grid-container {
     display: grid;
@@ -137,11 +141,6 @@ img{
     font-size: 30px;
     text-align: center;
   }
-.grid-item >img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (min-width: 481px) {
     h1, h2 {
       padding:5px;
@@ -196,10 +195,6 @@ select {
 
 button {
     overflow: visible
-}
-
-img {
-    margin-bottom: 5px;
 }
 
 .w3-modal {
