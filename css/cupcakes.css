@@ -146,12 +146,10 @@ img{
 .grid-item{
     border: none;
     padding: 20px;
-    font-size: 30px;
+    font-size: 1.125em !important;
     text-align: center;
   }
-  .grid-item >p{
-    font-size: 0.875em;
-  }
+
  
 button,
 input,
