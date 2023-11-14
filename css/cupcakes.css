@@ -99,6 +99,9 @@ h1{
 h2{
     font-size: 1.125em;
 }
+h4{
+  text-align: center;
+}
 p{
     font-size: 0.875em;
 }
@@ -140,6 +143,9 @@ img{
     padding: 20px;
     font-size: 30px;
     text-align: center;
+  }
+  .grid-item >p{
+    font-size: 0.875em;
   }
 @media screen and (min-width: 481px) {
     h1, h2 {
