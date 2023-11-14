@@ -78,8 +78,8 @@ img{
 }
 .grid-item{
   border: none;
-  padding: 20px;
-  font-size: 1.125em !important;
+  padding: 10px;
+  font-size: 1em !important;
   text-align: center;
 } 
 button,
@@ -151,6 +151,10 @@ input[type="image"]{
     padding: 10px;
     justify-content: space-evenly;
   }
+  .grid-item{
+    padding: 20px;
+    font-size: 1.125em !important;
+  } 
 }
 
 /*all pages styling*/
