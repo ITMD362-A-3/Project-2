@@ -48,14 +48,22 @@ body {
     margin: 5px 0;
     align-self: flex-end;
 }
+.footer {
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+    width: 100%;
+    background-color: #f2cc84;
+    color: white;
+    text-align: center;
+  } 
+
+/*cupcakes page styling*/
 .divider{
     display: block;
     border-top: solid 0.185em gray;
     margin: 1.185em 0 ;
     padding: 0.875em 0;
-}
-h2{
-    margin-top: 1.185em ;
 }
 .dropbtn {
     margin-top: 1.185em ;
@@ -88,16 +96,19 @@ h2{
     text-decoration: none;
     display: block;
   }
-  
 .dropdown-content a:hover {background-color: #f1f1f1;}  
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #95ccba;}
+#content{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 h1{
   font-size: 2.5em;
 }
 h2{
     font-size: 1.125em;
+    margin-top: 1.185em ;
 }
 h4{
   text-align: center;
@@ -108,15 +119,9 @@ p{
 a {
     background-color: transparent;
 }
-.footer {
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
-    width: 100%;
-    background-color: #f2cc84;
-    color: white;
-    text-align: center;
-  }  
+.w3-small{
+  font-size: 0.635em !important;
+} 
 img{
     width: 100px;
     height: 125px;
@@ -147,51 +152,7 @@ img{
   .grid-item >p{
     font-size: 0.875em;
   }
-@media screen and (min-width: 481px) {
-    h1, h2 {
-      padding:5px;
-    }
-}
-  @media screen and (min-width: 1024px) {
-    .topnav {
-      background-color: #ffdede;
-      overflow: hidden;
-      margin-bottom: 2em;
-    }
-  
-    .topnav a {
-      float: center;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-  
-    .topnav a:hover {
-      background-color: #95ccba;
-      color: white;
-    }
-  
-    .topnav a.active {
-      background-color: #f2cc84;
-      color: white;
-    }
-    .navLinks{
-      display: flex;
-      flex-direction: row;
-      text-align: center;
-      background-color: #ffdede;
-      position: absolute;
-      width: 100%;
-    }
-  
-    .menubar {
-      display: none;
-    }  
-  }
-
-
+ 
 button,
 input,
 select {
@@ -202,7 +163,6 @@ select {
 button {
     overflow: visible
 }
-
 .w3-modal {
     z-index: 3;
     display: none;
@@ -217,7 +177,7 @@ button {
     background-color: rgba(0, 0, 0, .4)
 }
 
-.w3-modal-content {
+.w3-modal-content{
     margin: auto;
     background-color: #fff;
     position: relative;
@@ -227,7 +187,11 @@ button {
 }
 
 .w3-card-4 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)!important
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)!important;
+    padding: 0.5em !important;
+}
+.w3-card-4 >p{
+  font-size: 0.625em !important
 }
 
 @-webkit-keyframes fading {
