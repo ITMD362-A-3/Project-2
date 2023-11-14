@@ -1,62 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Parisienne&display=swap');
 html {
   font-size: 1.375em; /* 22px */
-  line-height: 1.275em; /* 26px / ~ 120% */
+  line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
-  /*background-image: url("images/background.jpg"); */
 }
-* {
-    box-sizing: border-box;
-    border: none;
+
+p, a {
+  font-family: 'Barlow', 'Arial', sans-serif; 
 }
-h2, button{
-    display: inline-block;
+
+h1{
+  font-size: 1.5em;
 }
-body {
-    margin: 0;
+
+.topnav {
+  background-color: #ffdede;
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: visible;
 }
-.navLinks.active {
-    display: flex; 
-    background-color: #ffdede;
-    z-index: 1;
-  }
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-  }
-  
-.header img {
-    width: 40px;
-    height: 40px;
+
+.navLinks{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffdede;
+  position: absolute;
+  width: 100%;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
 }
 .menubar {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: auto;
-    z-index: 2;
-    padding: 5px;
-  }
-  
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
-    align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 2;
+  padding: 5px;
 }
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  align-self: flex-end;
+}
+
+.navLinks.active {
+  display: flex; 
+  background-color: #ffdede;
+  z-index: 1;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+}
+
 .footer {
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
-    width: 100%;
+  bottom: 0; 
+  left: 0; 
+  z-index: 10;
+  width: 100%;
+  background-color: #f2cc84;
+  color: white;
+  text-align: center;
+}
+input[type="image"]{
+  background-color: #fbd2e0!important;
+  padding: 2%;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .topnav {
+    background-color: #ffdede;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #95ccba;
+    color: white;
+  }
+
+  .topnav a.active {
     background-color: #f2cc84;
     color: white;
+  }
+  .navLinks{
+    display: flex;
+    flex-direction: row;
     text-align: center;
-  } 
+    background-color: #ffdede;
+    position: absolute;
+    width: 100%;
+  }
+
+  .menubar {
+    display: none;
+  }
+}
 
 /*cupcakes page styling*/
 .divider{
@@ -74,12 +140,10 @@ body {
     border: none;
     cursor: pointer;
   }
-  
 .dropdown {
     position: relative;
     display: inline-block;
   }
-  
 .dropdown-content {
     display: none;
     position: absolute;
@@ -89,7 +153,6 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -99,10 +162,6 @@ body {
 .dropdown-content a:hover {background-color: #f1f1f1;}  
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #95ccba;}
-#content{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 h1{
   font-size: 2.5em;
 }
@@ -148,16 +207,13 @@ img{
     padding: 20px;
     font-size: 1.125em !important;
     text-align: center;
-  }
-
- 
+  } 
 button,
 input,
 select {
     font: inherit;
     margin: 0
 }
-
 button {
     overflow: visible
 }
@@ -174,7 +230,6 @@ button {
     background-color: #000;
     background-color: rgba(0, 0, 0, .4)
 }
-
 .w3-modal-content{
     margin: auto;
     background-color: #fff;
@@ -183,7 +238,6 @@ button {
     outline: 0;
     width: 600px
 }
-
 .w3-card-4 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)!important;
     padding: 0.5em !important;
@@ -191,7 +245,6 @@ button {
 .w3-card-4 >p{
   font-size: 0.625em !important
 }
-
 @-webkit-keyframes fading {
     0% {
         opacity: 0
@@ -203,7 +256,6 @@ button {
         opacity: 0
     }
 }
-
 @keyframes fading {
     0% {
         opacity: 0
@@ -249,7 +301,8 @@ button {
         transform: scale(1)
     }
 }
-
 .w3-transparent {
     background-color: transparent!important
 }
+
+
