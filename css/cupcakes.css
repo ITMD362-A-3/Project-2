@@ -36,26 +36,23 @@
 .dropdown-content a:hover {background-color: #f1f1f1;}  
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #95ccba;}
-h1{
+.cupcakes h1{
 font-size: 2.5em;
 }
-h2{
+h2.cupcakes{
   font-size: 1.125em;
   margin-top: 1.185em ;
 }
-h4{
+h4.cupcakes{
 text-align: center;
 }
-p{
-  font-size: 0.875em;
+p.cupcakes{
+  font-size: 0.675em;
 }
-a {
+a.cupcakes {
   background-color: transparent;
 }
-.w3-small{
-font-size: 0.635em !important;
-} 
-img{
+.cupcakes-img{
   width: 100px;
   height: 125px;
   cursor: pointer;
@@ -119,22 +116,7 @@ button {
 .w3-card-4 >p{
 font-size: 0.625em !important
 }
-@-webkit-keyframes animatezoom {
-  from {
-      -webkit-transform: scale(0)
-  }
-  to {
-      -webkit-transform: scale(1)
-  }
-}
-@keyframes animatezoom {
-  from {
-      transform: scale(0)
-  }
-  to {
-      transform: scale(1)
-  }
-}
+
 .w3-transparent {
   background-color: transparent!important
 }
@@ -223,7 +205,7 @@ p, a {
   padding: 3px;
 }
 
-.header img {
+.header{
   width: 40px;
   height: 40px;
 }
