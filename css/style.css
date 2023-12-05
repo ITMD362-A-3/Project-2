@@ -37,6 +37,7 @@ h1{
 .topnav a {
   color: black;
   padding: 14px 16px;
+  background-color: #ffdede;
   font-size: 17px;
   display: block;
 }
