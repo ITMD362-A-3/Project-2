@@ -479,14 +479,6 @@ h1{
   font-size: 2.5em;
 }
 
-.topnav {
-  background-color: #ffdede;
-  display: flex;
-  position: relative;
-  align-items: center;
-  overflow: visible;
-}
-
 .navLinks{
   display: none;
   flex-direction: column;
@@ -496,12 +488,6 @@ h1{
   width: 100%;
 }
 
-.topnav a {
-  color: black;
-  padding: 14px 16px;
-  font-size: 17px;
-  display: block;
-}
 .menubar {
   display: flex;
   flex-direction: column;
