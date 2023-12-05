@@ -49,12 +49,10 @@ h1{
   padding: 5px;
 }
 
-.bar {
+.hamburger-icon {
   width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 5px 0;
-  align-self: flex-end;
+  height: 25px;
+  cursor: pointer;
 }
 
 .navLinks.active {

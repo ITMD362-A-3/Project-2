@@ -1,10 +1,16 @@
 // menu bar
 document.getElementById("menuBar").addEventListener("click", myFunction, false);
 function myFunction() {
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
   const navLinks = document.querySelector('.navLinks');
   console.log('Menu bar clicked');
-  navLinks.classList.toggle('active');
+
+  hamburgerIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 }
+
+
 
 // wedding slideshow
 // picture slider
