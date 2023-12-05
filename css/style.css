@@ -594,8 +594,8 @@ h1{
   background-color: #f2cc84;
   color: white;
   text-align: center;
+  }
 }
-
 @media screen and (min-width: 481px) {
   h1, h2 {
     padding:5px;
