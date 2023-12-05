@@ -461,7 +461,6 @@ input[type="image"]{
     font-size: 1.125em !important;
   } 
    /*home style*/ 
-  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Parisienne&display=swap');
 html {
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
@@ -480,14 +479,6 @@ h1{
   font-size: 2.5em;
 }
 
-.topnav {
-  background-color: #ffdede;
-  display: flex;
-  position: relative;
-  align-items: center;
-  overflow: visible;
-}
-
 .navLinks{
   display: none;
   flex-direction: column;
@@ -497,12 +488,6 @@ h1{
   width: 100%;
 }
 
-.topnav a {
-  color: black;
-  padding: 14px 16px;
-  font-size: 17px;
-  display: block;
-}
 .menubar {
   display: flex;
   flex-direction: column;
@@ -607,8 +592,8 @@ h1{
   .prevB, .nextB {
      bottom: -5%;
   }
-
-  @media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1024px) {
     .topnav {
       background-color: #ffdede;
       overflow: hidden;
@@ -621,7 +606,7 @@ h1{
   }
 
   .topnav a {
-    float: center;
+    float: left;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -672,8 +657,8 @@ h1{
     margin: 20px auto; 
     }
   }
-}
+
   
-}
+
 
 
