@@ -606,8 +606,8 @@ h1{
   .prevB, .nextB {
      bottom: -5%;
   }
-
-  @media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1024px) {
     .topnav {
       background-color: #ffdede;
       overflow: hidden;
